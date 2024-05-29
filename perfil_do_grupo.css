@@ -1,0 +1,168 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-avatar {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.group-name {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.member-count {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* style.css */
+
+/* Adicione o CSS a seguir após o código anterior */
+
+.media-section {
+    margin-top: 20px;
+}
+
+.media-gallery {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.media-images {
+    flex: 1;
+    display: flex;
+}
+
+.media-images img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.media-arrow {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.left-arrow {
+    visibility: hidden;
+}
+
+.right-arrow {
+    margin-left: auto;
+}
+
+
+.share-link button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* style.css */
+
+/* Adicione o CSS a seguir após o código anterior */
+
+.member {
+    margin: 10px;
+    text-align: center;
+    display: flex; /* Alterado */
+    align-items: center; /* Adicionado */
+}
+
+.member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px; /* Adicionado */
+}
+
+.member-details {
+    flex-grow: 1; /* Adicionado */
+    text-align: left; /* Adicionado */
+}
+
+.member-name,
+.member-number {
+    font-size: 14px; /* Alterado */
+    margin: 0; /* Alterado */
+    line-height: 1.2; /* Adicionado */
+}
+
+/* Adicione o CSS a seguir após o código anterior */
+
+.profile-avatar {
+    text-align: center;
+    position: relative; /* Adicionado */
+}
+
+.back-arrow {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Mudado para 'left' */
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Adicione o CSS a seguir após o código anterior */
+
+.show-more {
+    text-align: center;
+}
+
+.show-more-link {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.additional-members {
+    margin-top: 20px;
+}

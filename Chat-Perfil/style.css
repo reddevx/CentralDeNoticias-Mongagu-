@@ -1,0 +1,204 @@
+/* Definindo estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Definindo a fonte padrão */
+  background-color: #f0f0f0; /* Cor de fundo do corpo */
+  margin: 0; /* Removendo a margem padrão */
+  display: flex; /* Usando flexbox para o layout */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+  height: 100vh; /* Definindo a altura total da viewport */
+}
+
+/* Estilo para o contêiner do chat */
+#chat-container {
+  width: 100%; /* Largura total */
+  height: 100vh;
+  background-color: #ffffff; /* Cor de fundo branco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+  border-radius: 5px; /* Cantos arredondados */
+  overflow: hidden; /* Escondendo transbordamento */
+  display: flex; /* Usando flexbox para o layout */
+  flex-direction: column; /* Colocando as pessoas em uma coluna */
+}
+
+/* Estilo para o cabeçalho do chat */
+#chat-header {
+  background-color: #333; /* Cor de fundo escura */
+  padding: 15px; /* Espaçamento interno */
+  text-align: center; /* Centralizando o texto */
+}
+
+/* Estilo para o link da comunidade no cabeçalho */
+#chat-header .community-link {
+  text-decoration: none; /* Removendo sublinhado */
+  color: white; /* Cor do texto branco */
+  display: flex; /* Usando flexbox */
+  align-items: center; /* Centralizando verticalmente */
+  justify-content: center; /* Centralizando horizontalmente */
+}
+
+/* Estilo para a imagem dentro do link da comunidade */
+#chat-header .community-link img {
+  width: 30px; /* Largura da imagem */
+  height: 30px; /* Altura da imagem */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para o título no cabeçalho do chat */
+#chat-header h1 {
+  margin: 0; /* Removendo margem */
+  font-size: 20px; /* Tamanho da fonte */
+  color: white; /* Cor do texto branco */
+}
+
+/* Estilo para a janela de chat */
+#chat-window {
+  flex: 1; /* Crescendo para preencher o espaço disponível */
+  padding: 10px; /* Espaçamento interno */
+  overflow-y: auto; /* Habilitando rolagem vertical */
+}
+
+/* Removendo estilo padrão da lista de mensagens */
+#messages {
+  list-style-type: none; /* Removendo marcadores da lista */
+  padding: 0; /* Removendo padding */
+}
+
+/* Estilo geral para as mensagens */
+.message {
+  display: flex; /* Usando flexbox */
+  align-items: center; /* Centralizando verticalmente */
+  margin-bottom: 10px; /* Espaçamento abaixo */
+}
+
+/* Estilo para mensagens recebidas */
+.message.received .username {
+  color: #007bff; /* Cor dos nomes de usuários segundarios  */
+}
+
+/* Estilo para mensagens enviadas */
+.message.sent .username {
+  color: #ffffff; /* Cor do nome do uusuario principal*/
+}
+
+/* Estilo para o avatar */
+.message .avatar {
+  width: 30px; /* Largura do */
+  height: 30px; /* Altura do */
+  border-radius: 50%; /* Tornando o avatar circular */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para o nome de usuário */
+.message .username {
+  font-weight: bold; /* Texto em negrito */
+  margin-right: 5px; /* Espaçamento à direita */
+}
+
+/* Estilo para o contêiner de entrada de mensagem */
+#input-container {
+  display: flex; /* Usando flexbox */
+  border-top: 1px solid #ddd; /* Borda superior */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+/* Estilo para o campo de entrada de mensagem */
+#message-input {
+  flex: 1; /* Crescendo para preencher o espaço disponível */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda */
+  border-radius: 3px; /* Cantos arredondados */
+}
+
+/* Estilo para o botão de enviar */
+#send-button {
+  padding: 10px 15px; /* Espaçamento interno */
+  margin-left: 10px; /* Espaçamento à esquerda */
+  border: none; /* Removendo borda */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Cor do texto branco */
+  border-radius: 3px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilo para o botão de enviar ao passar o mouse */
+#send-button:hover {
+  background-color: #0056b3; /* Mudando a cor de fundo no hover */
+}
+
+/* Configurações adicionais para as mensagens */
+#messages {
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Colocando os filhos em uma coluna */
+}
+
+/* Estilo para mensagens individuais */
+.message {
+  padding: 8px 12px; /* Espaçamento interno */
+  margin: 5px 0; /* Margem vertical */
+  border-radius: 5px; /* Cantos arredondados */
+  max-width: 70%; /* Largura máxima */
+  position: relative; /* Posicionamento relativo */
+  display: flex; /* Usando flexbox */
+  align-items: flex-start; /* Alinhando no início */
+}
+
+/* Estilo para mensagens enviadas */
+.message.sent {
+  align-self: flex-end; /* Alinhando à direita */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+}
+
+/* Estilo para mensagens recebidas */
+.message.received {
+  align-self: flex-start; /* Alinhando à esquerda */
+  background-color: #f1f1f1; /* Cor de fundo cinza claro */
+  color: #000; /* Cor do texto preto */
+}
+
+/* Estilo para o nome de usuário dentro das mensagens */
+.message .username {
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 3px; /* Espaçamento abaixo */
+  display: block; /* Exibindo como bloco */
+}
+
+/* Estilo para o avatar dentro das mensagens */
+.message .avatar {
+  width: 30px; /* Largura do avatar */
+  height: 30px; /* Altura do avatar */
+  border-radius: 50%; /* Tornando o avatar circular */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para o contêiner de entrada de mensagem */
+#chat-input {
+  display: flex; /* Usando flexbox */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilo para o campo de entrada de mensagem */
+#message-input {
+  flex: 1; /* Crescendo para preencher o espaço disponível */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ddd; /* Borda */
+  border-radius: 5px; /* Cantos arredondados */
+  margin-right: 10px; /* Espaçamento à direita */
+}
+
+/* Estilo para o botão de enviar */
+#send-button {
+  padding: 10px 15px; /* Espaçamento interno */
+  border: none; /* Removendo borda */
+  background-color: #007bff; /* Cor de fundo azul */
+  color: #fff; /* Cor do texto branco */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de ponteiro */
+}
+
+/* Estilo para o botão de enviar ao passar o mouse */
+#send-button:hover {
+  background-color: #0056b3; /* Mudando a cor de fundo no hover */
+}

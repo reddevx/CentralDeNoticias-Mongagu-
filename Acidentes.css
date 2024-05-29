@@ -1,0 +1,274 @@
+/* Define estilos básicos para todo o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: #0000ff;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: white; /* Cor do texto branca */
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #00008b;
+}
+
+/* Estilos para a seção superior da página */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.top-section .info-box {
+    border-radius: 5%;
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    padding: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos para o contêiner de cartões na seção superior */
+.top-section .card-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para cada cartão */
+.top-section .card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section .card img {
+    width: 100%;
+    height: 147px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.top-section .card .card-content {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.top-section .card .card-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.top-section .card .card-content a:hover {
+    color: #00008b;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para a seção de notícias principal */
+.main-news {
+    flex: 2;
+    margin: 20px;
+}
+
+.secondary-news {
+    flex: 1;
+    margin: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+}
+
+.news-item a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: none;
+    color: #00008b;
+}
+
+/* Estilos para a seção de cartões de informação */
+.info-cards {
+    margin: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.info-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.info-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.info-card a {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+    color: #00008b;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+/* Estilo para o título em destaque */
+.highlight-title {
+    color: blue;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de rolar para o topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Largura e altura iguais para formar um círculo */
+    height: 50px;
+    background-color: #0000ff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none;
+    border-radius: 50%; /* Torna o botão um círculo */
+    cursor: pointer;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    z-index: 1000; /* Certifique-se de que o botão fique acima de outros elementos */
+}
+
+.scroll-to-top:hover {
+    background-color: #00008b; /* Cor mais escura ao passar o mouse */
+}
+
+.message-icon {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.message-icon img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    border-radius: 50%; /* Mantém a forma da imagem como um círculo */
+}
+
+.message-icon:hover {
+    background-color: #00008b;
+}

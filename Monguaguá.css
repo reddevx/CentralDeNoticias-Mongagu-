@@ -1,0 +1,239 @@
+/* Define estilos básicos para todo o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho da página */
+header {
+    background-color: #0000ff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    color: white; /* Cor do texto branca */
+}
+
+/* Estilos para a barra de navegação */
+nav {
+    background-color: #000; /* Faixa preta */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para cada item da lista de navegação */
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Estilos para os links dentro dos itens da lista de navegação */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Estilos para quando o mouse passa por cima dos links */
+nav ul li a:hover {
+    background-color: #00008b; /* Cor mais escura */
+}
+
+/* Estilos para o carrossel */
+.carousel-caption h2,
+.carousel-caption p {
+    background-color: transparent; /* Remover fundo preto */
+    padding: 10px;
+    border-radius: 10px;
+    color: white; /* Texto branco */
+}
+
+.carousel-caption a {
+    color: white; /* Cor do link branco */
+    text-decoration: none;
+}
+
+.carousel-caption a:hover {
+    color: #00008b; /* Cor mais escura quando o mouse passa por cima */
+    text-decoration: underline; /* Sublinhado quando o mouse passa por cima */
+}
+
+/* Estilos para a seção de notícias */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.main-news {
+    flex: 2;
+    margin: 20px;
+}
+
+.secondary-news {
+    flex: 1;
+    margin: 20px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+}
+
+.news-item a {
+    color: #0000ff; /* Cor azul */
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: none; /* Remover sublinhado */
+    color: #00008b; /* Cor mais escura */
+}
+
+/* Estilos para a seção de cartões de informação */
+.info-cards {
+    margin: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.info-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.info-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.info-card a {
+    color: #0000ff; /* Cor azul */
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+    color: #00008b; /* Cor mais escura */
+}
+
+/* Estilos para o rodapé da página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para a linha horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+/* Estilos para o botão de rolar para o topo */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; /* Largura e altura iguais para formar um círculo */
+    height: 50px;
+    background-color: #0000ff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none;
+    border-radius: 50%; /* Torna o botão um círculo */
+    cursor: pointer;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra */
+    z-index: 1000; /* Certifique-se de que o botão fique acima de outros elementos */
+}
+
+.scroll-to-top:hover {
+    background-color: #00008b; /* Cor mais escura ao passar o mouse */
+}
+
+.message-icon {
+    position: absolute;
+    top: 20px; /* ajuste conforme necessário */
+    right: 20px; /* ajuste conforme necessário */
+    z-index: 1000; /* Certifique-se de que o ícone esteja acima de outros elementos */
+}
+
+.message-icon a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* ajuste conforme necessário */
+}
+
+/* Estilos para quando o mouse passa por cima do ícone */
+.message-icon a:hover {
+    color: #00008b; /* Cor mais escura quando o mouse passa por cima */
+}
+.message-icon {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.message-icon img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    height: 100%; /* Garante que a imagem ocupe todo o espaço disponível */
+    border-radius: 50%; /* Mantém a forma da imagem como um círculo */
+}
+
+.message-icon:hover {
+    background-color: #00008b;
+}
